@@ -16,43 +16,52 @@
 
     <main>
         <section class="section-container">
-            <h2>Adicionar Produto</h2>
-            <form id="form-adicionar">
-                <div class="input-group">
-                    <label for="produto-nome">Nome do Produto:</label>
-                    <input type="text" id="produto-nome" required>
-                </div>
-                <div class="input-group">
-                    <label for="produto-quantidade">Quantidade:</label>
-                    <input type="number" id="produto-quantidade" min="1" required>
-                </div>
-                <div class="input-group">
-                    <label for="produto-preco">Preço (R$):</label>
-                    <input type="number" id="produto-preco" min="0.01" step="0.01" required>
-                </div>
-                <button type="submit">Adicionar</button>
-            </form>
-        </section>
+    <h2>Adicionar Produto</h2>
+    <form id="form-adicionar">
+        <div class="input-group">
+            <label for="produto-nome">Nome do Produto:</label>
+            <input type="text" id="produto-nome" required>
+        </div>
+        <div class="input-group">
+            <label for="produto-quantidade">Quantidade:</label>
+            <input type="number" id="produto-quantidade" min="1" required>
+        </div>
+        <div class="input-group">
+            <label for="produto-unidade">Unidade:</label>
+            <select id="produto-unidade" required>
+                <option value="unidade">Unidade(s)</option>
+                <option value="gramas">Grama(s)</option>
+                <option value="ml">Mililitro(s)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="produto-preco">Preço (R$):</label>
+            <input type="number" id="produto-preco" min="0.01" step="0.01" required>
+        </div>
+        <button type="submit">Adicionar</button>
+    </form>
+</section>
 
         <section class="section-container">
-            <h2>Estoque Atual</h2>
-            <div class="filter-container">
-                <input type="text" id="filtro-estoque" placeholder="Filtrar produtos...">
-            </div>
-            <table id="tabela-estoque">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Quantidade</th>
-                        <th>Preço Unitário</th>
-                        <th>Valor Total</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    </tbody>
-            </table>
-        </section>
+    <h2>Estoque Atual</h2>
+    <div class="filter-container">
+        <input type="text" id="filtro-estoque" placeholder="Filtrar produtos...">
+    </div>
+    <table id="tabela-estoque">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Valor Total</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+    <button id="limpar-estoque-btn">Limpar Estoque</button>
+</section>
 
         <section class="section-container">
             <h2>Carrinho de Compras</h2>

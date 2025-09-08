@@ -175,3 +175,27 @@ footer {
     margin-top: auto;
     border-top: 1px solid var(--cor-borda);
 }
+
+select {
+    padding: 0.75rem;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border-radius: var(--borda-arredondada);
+    transition: border-color 0.3s;
+    appearance: none; /* Remove a seta padrão */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23e0e0e0' d='M4.5 4.5L6 6l1.5-1.5L9 3l-3 3-3-3z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--cor-destaque);
+}
+
+select option {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
